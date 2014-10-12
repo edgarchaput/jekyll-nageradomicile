@@ -1,0 +1,33 @@
+---
+layout: default
+title: Nager à domicile - Professeurs
+---
+
+<div class="vertical-spacer"></div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1 class="text-center">Professeurs</h1>
+		</div>
+	</div>
+	<div class="row">
+		{% for professeurs in site.data.professeurs %}
+
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="images/professeurs/{{ professeurs.filename }}" alt="">
+				<div class="caption">
+				<h2>{{ professeurs.name }}</h2>
+				</div>
+			</div>
+		</div>
+
+		{% endfor %}
+
+
+
+
+	</div>
+</div>
